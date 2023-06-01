@@ -5,6 +5,7 @@ That is the compression part (CPU heavy) can happen in multiple threads and the 
 
 This way you can use multithreading tool like ThreadPoolExecutor to concurrently compress and write files to a zipfile
 For example:
+
     with concurrent.futures.ThreadPoolExecutor() as executor:
         futures = []
 
